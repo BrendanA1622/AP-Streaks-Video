@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/750990898_2617574096_42057702.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/41511218_569519018_3226737044.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/1855407285_1474765315_1487769234.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/2156962335_1107688550_826012475.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/3816584162_1873158800_1825495999.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/3207290034_774239770_4166330441.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/2037506907_1273901220_4261462317.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/3266817424_1474765315_4279434782.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/3266817424_2185838117_2796068278.mp4'
+file 'file:C:/Users/brend/manimStuff/media/videos/Slide4Anim/1080p60/partial_movie_files/Slide4Anim/3266817424_1474765315_2442513656.mp4'
