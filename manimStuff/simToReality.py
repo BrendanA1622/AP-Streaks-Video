@@ -179,7 +179,6 @@ class SimToReality(Scene):
         self.add(ax)
         self.play(ax.animate(run_time=1.5).shift(RIGHT * 15))
 
-        self.play(Create(polygon1), Create(polygon2), Create(polygon3), Create(polygon4), Create(polygon5), Create(polygon6), Create(polygon7), Create(polygon8), Create(polygon9), Create(polygon10))
 
         tiltAmount = 0.3
         shiftAmount = 0.35
@@ -214,18 +213,33 @@ class SimToReality(Scene):
 
         str10_label = Text("streaks of ten").next_to(polygon10, UP * vert).scale(0.6).rotate(PI / 2 - tiltAmount).shift(RIGHT * shiftAmount)
 
+
+
+
+
+        numQ_label = Text("# of sampled tests:").to_edge(LEFT).shift(UP*1)
+        
+        sampNum = Text("1").next_to(numQ_label, DOWN * 2).scale(2)
+        infinity = Text("∞").next_to(numQ_label, DOWN * 4).scale(5)
+        
+        self.play(Create(polygon1), Create(polygon2), Create(polygon3), Create(polygon4), Create(polygon5), Create(polygon6), Create(polygon7), Create(polygon8), Create(polygon9), Create(polygon10),Write(numQ_label),Write(sampNum))
+        self.wait(2)
         self.play(Write(str1_label),Write(str2_label),Write(str3_label),Write(str4_label),Write(str5_label),Write(str6_label),Write(str7_label),Write(str8_label),Write(str9_label),Write(str10_label))
         dots = Text(". . .").next_to(polygon10, RIGHT)
         self.play(Write(dots))
         vg = VGroup()
         vg.add(str1_label,str2_label,str3_label,str4_label,str5_label,str6_label,str7_label,str8_label,str9_label,str10_label,dots)
 
-        simCaption = Text("Simulated streaks").next_to(polygon6,UP).shift(UP*4)
-        
+        simCaption = Text("Simulated streaks").next_to(polygon6,UP).shift(UP*4.5)
+        self.wait(2)
         self.play(Transform(vg,simCaption))
 
-        self.wait(1)
+        self.wait(4)
 
-        self.play(t.animate.set_value(0))
+        self.play(t.animate(run_time = 2).set_value(0), Transform(sampNum,infinity,run_time=2))
 
-        self.wait(2)
+        self.wait(4)
+
+        vg.add(simCaption,sampNum,infinity,numQ_label,ax)
+
+        self.play(vg.animate.shift(RIGHT * 15))
